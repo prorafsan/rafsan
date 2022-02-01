@@ -1,0 +1,637 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+#loder{
+    height: 100vh;
+    width: 100%;
+    background: #fff url(../image/loading.gif) no-repeat center;
+    z-index: 9999;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+li{
+    list-style: none;
+}
+
+
+/******************* design-Part *********************/
+
+.fast-page{
+    background-image: linear-gradient(rgba(5, 5, 5, 0.815),rgba(5, 5, 5, 0.815)),url(../image/bannerHome.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.fast-page .navigation{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.164);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.fast-page .navigation .logo{
+    display: flex;
+    align-items: flex-end;
+}
+.fast-page .navigation .logo h1{
+    color: #F5560D;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: default;
+}
+.fast-page .navigation .logo .logodod{
+    background-color: #F5560D;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    cursor: default;
+}
+.fast-page .navigation ul{
+    display: flex;
+    align-items: center;
+}
+.fast-page .navigation ul li{
+    margin: 0px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px;
+}
+.fast-page .navigation ul li a i{
+    margin-right: 10px;
+}
+.fast-page .navigation ul li:hover{
+    font-size: 15px;
+}
+.fast-page .navigation ul samp{
+    height: 12px;
+    width: 2px;
+    background-color: white;
+}
+.fast-page .navigation .flow-me{
+    align-items: center;
+    display: flex;
+}
+.fast-page .navigation .flow-me a .fab{
+    margin: 0px 9px;
+    font-size: 17px;
+    color: tomato;
+}
+.midelcontent{
+    height:95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.midelcontent .text{
+    display: flex;
+    align-items: center;
+}
+.midelcontent .leftDiveder{
+    margin-right: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.midelcontent .righttDiveder{
+    margin-left: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.midelcontent h2{
+    text-shadow: 0.5px 0.5px 15px rgba(228, 228, 228, 0.842);
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+.midelcontent .btn{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.midelcontent .btn .btn1 a{
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+.midelcontent .btn a{
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 2px solid tomato;
+    /* background-color: tomato; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+.midelcontent .btn a i{
+    margin-right: 10px;
+}
+.midelcontent .btn a:hover{
+    box-shadow: -1px -1px 5px white;
+}
+.midelcontent img{
+    height:60px;
+    position: absolute;
+    bottom: 0;
+    animation: arro-any 1s infinite;
+}
+@keyframes arro-any {
+    0%{
+        margin-bottom: 0;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+    100%{
+        margin-bottom: 0;
+    }
+}
+
+/******************* secan page **************/
+
+.secnd-page{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: default;
+}
+.secnd-page .leftsection{
+    background-image: linear-gradient(to top,rgb(255, 255, 255) 65%,rgb(0, 0, 255) 35%);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+    height: 300px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.secnd-page .leftsection img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid tomato;
+    box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.623);
+}
+.secnd-page .leftsection h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+} 
+.secnd-page .leftsection h2{
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: blue;
+    margin-top: 5px;
+}
+.secnd-page .leftsection .btn{
+    background-color: tomato;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+
+.secnd-page .rightsection .text{
+    display: flex;
+    align-items: center;
+}
+.secnd-page .rightsection .text .leftDiveder{
+    margin-right: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.secnd-page .rightsection .text .righttDiveder{
+    margin-left: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.secnd-page .rightsection .text h2{
+    /* text-shadow: 0.5px 0.5px 15px rgba(255, 99, 71, 0.842); */
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    cursor: default;
+}
+.secnd-page .rightsection p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: teal;
+}
+
+
+
+
+
+
+
+/******************* skil ******************/
+
+
+.skil{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.950),rgba(0, 0, 0, 0.950)),url(../image/skillPage.png);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.skil .titel .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.skil .titel .leftDiveder{
+    margin-right: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.skil .titel .righttDiveder{
+    margin-left: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.skil .titel h2{
+    text-shadow: 0.5px 0.5px 15px rgba(228, 228, 228, 0.842);
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+.skil .progresbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    cursor: default;
+}
+.skil .progresbar .pbar h1{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.skil .progresbar .pbar .barback .barfont::after{
+    content: "";
+    background-color: tomato;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    float: right;
+    margin-top: -23px;
+}
+.skil .progresbar .pbar .barback{
+    height: 3px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+.skil .progresbar .pbar .barback .barfont{
+    background-color: tomato;
+    height: 100%;
+    animation: skilanymation 1s;
+}
+.skil .progresbar .pbar .barback .html{
+    width: 90%;
+}
+.skil .progresbar .pbar .barback .html::after{
+    content: "90%";
+}
+.skil .progresbar .pbar .barback .css{
+    width: 90%;
+}
+.skil .progresbar .pbar .barback .css::after{
+    content: "90%";
+}
+.skil .progresbar .pbar .barback .js{
+    width: 30%;
+}
+.skil .progresbar .pbar .barback .js::after{
+    content: "30%";
+}
+.skil .progresbar .pbar .barback .wordpress{
+    width: 90%;
+}
+.skil .progresbar .pbar .barback .wordpress::after{
+    content: "90%";
+}
+.skil .progresbar .pbar .barback .Grachic{
+    width: 50%;
+}
+.skil .progresbar .pbar .barback .Grachic::after{
+    content: "50%";
+}
+.skil .progresbar .pbar .barback .Office{
+    width: 80%;
+}
+.skil .progresbar .pbar .barback .Office::after{
+    content: "80%";
+}
+@keyframes skilanymation{
+    0%{
+        transform: scaleX(0%);
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}
+
+
+
+
+
+/******************************************* work **************************************************/
+
+
+.work .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.work .titel .leftDiveder{
+    margin-right: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.work .titel .righttDiveder{
+    margin-left: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.work .titel h2{
+    text-shadow: 0.5px 0.5px 15px rgba(228, 228, 228, 0.842);
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    cursor: default;
+}
+.work .work-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.work .work-logo img{
+    width: 300px;
+    /* animation: workanymation 3s infinite; */
+}
+/* @keyframes workanymation {
+    0%{
+    margin-left: 0px;
+    }
+    100%{
+    margin-left: -400px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+.survice{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500),rgba(0, 0, 0, 0.500)),url(../image/skillPage.png);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.survice .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+.survice .titel .leftDiveder{
+    margin-right: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.survice .titel .righttDiveder{
+    margin-left: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.survice .titel h2{
+    text-shadow: 0.5px 0.5px 15px rgba(228, 228, 228, 0.842);
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+.survice .surviceContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+.survice .surviceContent .surviceBG{
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 205px;
+    height: 255px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.survice .surviceContent .surviceBG:hover{
+    box-shadow: none;
+    transform: translate(10px);
+}
+.survice .surviceContent .surviceBG img{
+    height: 45px;
+    margin-top: 30px;
+
+}
+.survice .surviceContent .surviceBG h1{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 400;
+}
+.survice .surviceContent .surviceBG p{
+    color: rgb(85, 85, 85);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.potfolio{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    flex-direction: column;
+}
+.potfolio img{
+    height: 200px;
+}
+
+
+
+
+
+
+
+.contract{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../image/bannerContract.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+.contract .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+.contract .titel .leftDiveder{
+    margin-right: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.contract .titel .righttDiveder{
+    margin-left: 20px;
+    width: 100px;
+    height: 2px;
+    background-color: tomato;
+}
+.contract .titel h2{
+    text-shadow: 0.5px 0.5px 15px rgba(228, 228, 228, 0.842);
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+.contract .contracttext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+}
+.contract .contracttext .leftcon .con-tex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: default;
+}
+.contract .contracttext .leftcon i {
+    font-size: 30px;
+    margin-right: 30px;
+}
+.contract .contracttext .leftcon h1{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: tomato;
+    cursor: default;
+}
+
+
+
+.contract .contracttext .rightcon{
+    background-color: #ffffff;
+    padding: 10px 50px;
+    border-radius: 10px;
+
+}
+.contract .contracttext .rightcon h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 30px;
+    color: tomato;
+    cursor: default;
+}
+.contract .contracttext .rightcon form input{
+    background-color: transparent;
+    border-bottom: 2px solid tomato;
+    height: 50px;
+    padding: 10px 5px;
+    width: 300px;
+    margin-bottom: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+.contract .contracttext .rightcon .submit{
+    background-color: tomato;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
